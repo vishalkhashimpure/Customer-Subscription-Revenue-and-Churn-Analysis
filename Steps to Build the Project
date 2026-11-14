@@ -1,0 +1,112 @@
+Project Overview
+A subscription-based digital services company wants to understand customer behaviour, improve revenue, and reduce customer churn. The project uses Python to clean customer subscription data, perform Exploratory Data Analysis (EDA), create meaningful features, visualize business trends, and build a Linear Regression model to predict customer revenue.
+
+Your dataset contains 2,560 rows and 15 columns, including customer details, subscription plans, monthly fees, tenure, support tickets, session time, discounts, marketing channels, churn status, and total revenue.
+Project Implementation Steps
+Step 1: Problem Understanding and Dataset Exploration
+- Understand the business problem and project objectives.
+- Import the required dataset (subscription_data.csv).
+- Explore the dataset using Pandas.
+- Check the number of rows and columns.
+- Examine column names and data types.
+- Identify missing values and understand the dataset structure.
+Step 2: Data Cleaning Using Pandas
+- Identify missing values in Age, City, Average Session Time, and Discount Percentage.
+- Handle missing numerical values using median imputation.
+- Handle missing categorical values using mode imputation.
+- Identify and remove duplicate records.
+- Convert Signup Date and Last Active Date into datetime format.
+- Identify and handle illogical date records.
+- Identify invalid age values (below 18 or above 80).
+- Perform final data quality verification.
+Step 3: Feature Engineering Using Pandas
+Create additional columns to improve the analysis.
+1. Customer Tenure in Years
+2. Revenue per Month
+3. Binary Churn Flag
+4. Customer Age Group
+5. High-Value Customer Flag
+6. Days Active
+7. Session Usage Category
+8. Discount Category
+9. Signup Month
+10. Signup Year
+11. Support Intensity
+12. Revenue Category
+13. Subscription Plan Rank
+14. Customer Engagement Score
+Step 4: Exploratory Data Analysis (EDA)
+- Analyze customer demographics and subscription behaviour.
+- Understand revenue distribution.
+- Examine subscription plan performance.
+- Explore customer churn patterns.
+- Analyze relationships between customer engagement, tenure, discounts, and revenue.
+- Identify important trends and patterns in the dataset.
+Step 5: Data Visualization Using Matplotlib and Seaborn
+Create visualizations to understand customer behaviour and business performance.
+
+A. Customer and Numerical Distribution
+1. Age Distribution – Histogram
+2. Monthly Fee Distribution – Histogram
+3. Total Revenue Distribution – Histogram
+4. Average Session Time – Boxplot
+B. Categorical Analysis
+5. Average Revenue by Subscription Plan – Bar Chart
+6. Churn Rate by Subscription Plan – Bar Chart
+7. Average Revenue by Marketing Channel – Bar Chart
+8. Top 5 Cities by Average Revenue – Bar Chart
+
+C. Behavioural and Time-Based Analysis
+9. Revenue vs. Customer Tenure – Scatter Plot
+10. Customer Engagement and Revenue Analysis
+11. Customer Signup Trend – Line Chart
+12. Monthly Revenue Trend – Line Chart
+
+D. Modelling Support
+13. Correlation Heatmap to identify relationships between numerical variables.
+Step 6: Data Preparation for Machine Learning
+- Select relevant independent variables.
+- Select Total Revenue as the target variable.
+- Check for missing values in the selected features.
+- Remove or handle incomplete records.
+- Prepare the feature matrix (X) and target variable (y).
+- Split the dataset into training and testing sets using train_test_split().
+Step 7: Model Building Using Linear Regression
+- Import Linear Regression from Scikit-learn.
+- Initialize the Linear Regression model.
+- Train the model using training data.
+- Predict customer revenue using testing data.
+- Compare predicted revenue with actual revenue.
+Step 8: Model Evaluation
+Evaluate the model using appropriate regression metrics:
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R-squared (R²)
+These metrics help evaluate how accurately the model predicts customer revenue.
+Step 9: Business Insights and Recommendations
+- Identify customer groups generating higher revenue.
+- Understand the relationship between subscription plans and revenue.
+- Analyze factors associated with customer churn.
+- Examine the impact of customer tenure and engagement.
+- Evaluate marketing channel performance.
+- Provide recommendations to improve customer retention and revenue.
+Final Project Workflow
+1. Problem Understanding and Dataset Exploration
+2. Data Cleaning Using Pandas
+3. Feature Engineering Using Pandas
+4. Exploratory Data Analysis (EDA)
+5. Data Visualization Using Matplotlib and Seaborn
+6. Data Preparation for Machine Learning
+7. Model Building Using Linear Regression
+8. Model Evaluation
+9. Business Insights and Recommendations
+Technologies Used
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Linear Regression
